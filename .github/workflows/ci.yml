@@ -1,0 +1,55 @@
+name: Django CI
+
+on: [ push ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out code
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.12'
+
+    - name: Cache pip
+      uses: actions/cache@v3
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy to server
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST_NAME }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          script: |
+            cd ~/purchases
+            git pull
+            docker-compose up -d --build --remove-orphans
+           
+
+#If you are using Github action, you have local PC for development, you access Github via ssh and you have a remote server where you want to deploy your code, following steps might apply to you.
+#
+#Generate local ssh keys in your local computer ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+#Copy the content of your private key ~/.ssh/id_rsa to your clipboard
+#Create Github repository secret SSH_PRIVATE_KEY and paste your private key
+#copy the content of your public key ~/.ssh/id_rsa.pub to your clipboard
+#From your local computer ssh your remote host.
+#nano ~/.ssh/authorized_keys and paste your public key to the next line. If the file does not exit you can create it.
+#At that point you should be able to ssh your remote host without providing any password. And so should your Github action which has to behave like your local computer when appleboy/ssh-action uses your local private key.
