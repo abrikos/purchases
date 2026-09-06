@@ -13,48 +13,26 @@ services:
     env_file:
       - ./.env
     environment:
-      DB_HOST: db
+      DB_HOST: mongodb
     build: .
-    command: >
-      bash -c "./start-django-in-docker.sh"
-    volumes:
-      - front_bundles:/app/docker_volumes/static
     expose:
       - "8000"
     depends_on:
-       - db
-       - redis
-    develop:
-      watch:
-        - action: sync
-          path: .
-          target: /app
-          ignore:
-            - .git/
-            - .github/
-            - static/
-            - migrate.sh
-            - freeze.sh
+       - mongodb
 
-  db:
-    image: postgres:16.0
-    env_file:
-      - .env
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb_purchase
     environment:
-      POSTGRES_USER: ${DB_USER}
-      POSTGRES_PASSWORD: ${DB_PASSWORD}
-      POSTGRES_DB: ${DB_NAME}
-    expose:
-      - "5432"
+      - TZ=Asia/Yakutsk
+    ports:
+      - "27017"
     volumes:
-      - postgres_data:/var/lib/postgresql/data
+      - mongo-data:/data/db
 
 networks:
   default:
 
 volumes:
-  redis_data:
-  postgres_data:
-    driver: local
-  front_bundles:
+  mongo-data:
     driver: local
