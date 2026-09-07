@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="823010b2-6858-4f14-acaf-9da9a0ff7b79" name="Changes" comment="remove yandex">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+    <list default="true" id="823010b2-6858-4f14-acaf-9da9a0ff7b79" name="Changes" comment="fix ports">
+      <change beforePath="$PROJECT_DIR$/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +184,15 @@
       <option name="project" value="LOCAL" />
       <updated>1788758242775</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="fix ports">
+      <option name="closed" value="true" />
+      <created>1788758692580</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1788758692580</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,6 +208,7 @@
     <MESSAGE value="fix docker unicorn" />
     <MESSAGE value="fix docker fastapi" />
     <MESSAGE value="remove yandex" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove yandex" />
+    <MESSAGE value="fix ports" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix ports" />
   </component>
 </project>
