@@ -15,4 +15,4 @@ COPY . .
 EXPOSE 8000
 
 # Определяем команду для запуска приложения
-CMD ["fastapi", "run", "app/main.py", "--port", "8000"]
+CMD ["fastapi", "run", "--port", "8000"]
