@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="823010b2-6858-4f14-acaf-9da9a0ff7b79" name="Changes" comment="fix docker">
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+    <list default="true" id="823010b2-6858-4f14-acaf-9da9a0ff7b79" name="Changes" comment="fix docker fastapi">
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +144,31 @@
       <option name="project" value="LOCAL" />
       <updated>1788757132361</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="remove nginx conf">
+      <option name="closed" value="true" />
+      <created>1788757646502</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1788757646502</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fix docker unicorn">
+      <option name="closed" value="true" />
+      <created>1788757756583</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1788757756583</updated>
+    </task>
+    <task id="LOCAL-00007" summary="fix docker fastapi">
+      <option name="closed" value="true" />
+      <created>1788757857371</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1788757857371</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,6 +180,9 @@
     <MESSAGE value="websocket actions" />
     <MESSAGE value="docker" />
     <MESSAGE value="fix docker" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix docker" />
+    <MESSAGE value="remove nginx conf" />
+    <MESSAGE value="fix docker unicorn" />
+    <MESSAGE value="fix docker fastapi" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix docker fastapi" />
   </component>
 </project>
