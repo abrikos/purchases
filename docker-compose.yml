@@ -13,7 +13,8 @@ services:
     env_file:
       - ./.env
     environment:
-      DB_HOST: mongodb
+      - MONGODB_URL=mongodb://mongodb:27017/abrikoz
+
     build: .
     expose:
       - "8000"
