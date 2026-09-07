@@ -1,14 +1,4 @@
 services:
-  nginx:
-    image: nginx:latest
-    ports:
-      - "127.0.0.1:8000:80"
-    volumes:
-      - ./docker_volumes/nginx:/etc/nginx/conf.d
-    #restart: always
-    depends_on:
-      - backend
-
   backend:
     env_file:
       - ./.env
