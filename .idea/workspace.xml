@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="823010b2-6858-4f14-acaf-9da9a0ff7b79" name="Changes" comment="fix docker fastapi">
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+    <list default="true" id="823010b2-6858-4f14-acaf-9da9a0ff7b79" name="Changes" comment="remove yandex">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +169,23 @@
       <option name="project" value="LOCAL" />
       <updated>1788757857371</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="fix docker fastapi">
+      <option name="closed" value="true" />
+      <created>1788758047517</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1788758047517</updated>
+    </task>
+    <task id="LOCAL-00009" summary="remove yandex">
+      <option name="closed" value="true" />
+      <created>1788758242775</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1788758242775</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,6 +200,7 @@
     <MESSAGE value="remove nginx conf" />
     <MESSAGE value="fix docker unicorn" />
     <MESSAGE value="fix docker fastapi" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix docker fastapi" />
+    <MESSAGE value="remove yandex" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove yandex" />
   </component>
 </project>
